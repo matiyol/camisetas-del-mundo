@@ -1,0 +1,115 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif; /* Cambia a una fuente disponible */
+}
+
+/* Header */
+header {
+    background-color: #1E3A8A; /* Azul profundo */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 2.5em;
+    color: #FBBF24; /* Amarillo */
+}
+
+.logo p {
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+/* Hero */
+.hero {
+    background-color: #F3F4F6; /* Gris claro */
+    padding: 50px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #FBBF24; /* Amarillo */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Catálogo */
+#catalogo {
+    padding: 40px;
+    text-align: center;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+}
+
+.producto img {
+    width: 100%;
+}
+
+.producto h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Personalizar y Ofertas */
+#personalizar, #ofertas {
+    padding: 40px;
+    text-align: center;
+    background-color: #E5E7EB; /* Gris suave */
+}
+
+/* Footer */
+footer {
+    background-color: #1E3A8A;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
